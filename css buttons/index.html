@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+</head>
+<body>
+
+    <a href="#" class="menu-btn">
+        <div class="menu-btn-block top"></div>
+        <div class="menu-btn-block middle"></div>
+        <div class="menu-btn-block bottom"></div>
+    </a>
+<script>
+
+$(document).ready(function() {
+    $('.menu-btn').click(function() {
+        $('.menu-btn-block.top').toggleClass('active');
+        $('.menu-btn-block.middle').toggleClass('active');
+        $('.menu-btn-block.bottom').toggleClass('active');
+    });
+    
+});
+
+</script>
+</body>
+</html>
